@@ -1,0 +1,44 @@
+GET http://localhost:5000/country
+###
+
+###
+GET http://localhost:5000/country/Armenia/2021
+###
+GET http://localhost:5000/country/Armenia/2021/05
+###
+GET http://localhost:5000/country/Armenia
+
+###create one
+
+POST http://localhost:5000/country
+Content-Type: application/json
+
+{
+   "name":"Armenia",
+    "imp_value":"4003323322232323$",
+    "exp_value":"772324600$",
+    "date_":"25/07/2022",
+    "year_":"2021",
+    "month_":"05",
+    "day_":"3"
+}
+###
+
+GET http://localhost:5000/country/21
+Content-Type: application/json
+
+{
+    "name":"germany",
+    "imp_value":"100$",
+    "exp_value":"200$",
+    "date_":"27/04/2023",
+    "year":"2023",
+    "month":"04",
+    "day":"27",
+
+}
+
+
+###
+
+DELETE http://localhost:5000/Armenia
