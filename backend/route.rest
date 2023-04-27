@@ -2,7 +2,7 @@ GET http://localhost:5000/country
 ###
 
 ###
-GET http://localhost:5000/country/Armenia/2021
+GET http://localhost:5000/country/Armenia/2022/
 ###
 GET http://localhost:5000/country/Armenia/2021/05
 ###
@@ -18,7 +18,7 @@ Content-Type: application/json
     "imp_value":"4003323322232323$",
     "exp_value":"772324600$",
     "date_":"25/07/2022",
-    "year_":"2021",
+    "year_":"2022",
     "month_":"05",
     "day_":"3"
 }
