@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.ant-layout-header {
+	height: 200px !important;
+	display: flex;
+	font-size: 30px;
+	flex-direction: column-reverse;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.ant-layout-content {
+	height: 773px;
+}
+
+.ant-layout-footer {
+	height: 100px;
+}
