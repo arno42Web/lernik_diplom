@@ -1,21 +1,19 @@
-
+import { ThemeProvider } from 'styled-components';
 import './App.css';
-// import FormComponent from './components/FormComponent';
-// import CountrySelect from './components/CountrySelect';
-// import SelectYear from './components/SelectYear';
-// import SelectMonth from './components/MonthSelect';
-import MyLayout from './components/Layout';
-// import myHeader from './components/myHeader';
+import FormComponent from './components/FormComponent';
+import { MainBody } from './styled/Global.styled';
+import { Theme } from './utils/Theme';
 
 function App() {
   return (
     <div className="App">
-		{/* <FormComponent/> */}
-		{/* <myHeader/> */}
-		<MyLayout/>
-		{/* <CountrySelect/>
-		<SelectYear/>
-		<SelectMonth/> */}
+      <ThemeProvider theme={Theme}>
+        <MainBody>
+          <FormComponent/>
+
+        </MainBody>
+
+      </ThemeProvider>
     </div>
   );
 }

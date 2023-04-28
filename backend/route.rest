@@ -14,13 +14,13 @@ POST http://localhost:5000/country
 Content-Type: application/json
 
 {
-   "name":"Armenia",
-    "imp_value":"4003323322232323$",
-    "exp_value":"772324600$",
-    "date_":"25/07/2022",
-    "year_":"2022",
-    "month_":"05",
-    "day_":"3"
+   "name":"Germany",
+    "imp_value":"$",
+    "exp_value":"$",
+    "date_":"",
+    "year_":"",
+    "month_":"",
+    "day_":""
 }
 ###
 
