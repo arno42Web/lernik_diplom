@@ -5,8 +5,8 @@ const CountrySelect = ({ value, onChange }) => {
       <Select value={value} onChange={onChange}>
         <option value="">none</option>
         <option value="Iran">Iran</option>
-        <option value="Canada">Canada</option>
-        <option value="Armenia">Armenia</option>
+        <option value="China">China</option>
+        <option value="Japan">Japan</option>
       </Select>
     );
   };

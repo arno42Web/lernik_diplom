@@ -54,7 +54,7 @@ router.post('/',async(req,res)=>{
     const countries = new Country({
         name: req.body.name,
         import_value: req.body.imp_value,
-        export_date:req.body.exp_value,
+        export_value:req.body.exp_value,
         full_date:req.body.date_,
         year:req.body.year_,
         month:req.body.month_,
