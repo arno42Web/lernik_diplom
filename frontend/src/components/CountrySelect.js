@@ -7,6 +7,7 @@ const CountrySelect = ({ value, onChange }) => {
         <option value="Iran">Iran</option>
         <option value="China">China</option>
         <option value="Japan">Japan</option>
+        <option value="Germany">Germany</option>
       </Select>
     );
   };
