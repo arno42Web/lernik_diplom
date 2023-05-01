@@ -8,6 +8,7 @@ export const Form = styled.form`
   align-items: center;
   margin-top:30px;
   padding:40px;
+  box-sizing:border-box;
   width: 100%;
   background-color: #e1e1e1;
   border-radius:20px;
@@ -18,6 +19,7 @@ export const Label = styled.label`
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 600;
+  margin-left:10px;
 `;
 
 export const Select = styled.select`
@@ -32,6 +34,7 @@ export const Select = styled.select`
   padding: 10px;
   transition: all 0.2s ease-in-out;
   width: 100%;
+
 
   &:hover {
     background-color: #e1e1e1;
@@ -66,7 +69,7 @@ export const Button = styled.button`
 `;
 
 export const MainBody = styled.div`
-	background-color:${({theme})=> theme.colors.primary};
+	/*background-color:${({theme})=> theme.colors.primary};  */
 	width: 100%; 
 `
 export const Container = styled.div`
@@ -159,7 +162,6 @@ export const TechStackCard = styled.div`
 `
 
 export const StyledTable = styled.table`
-  border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
@@ -168,12 +170,12 @@ export const StyledTable = styled.table`
   
   th, td {
     padding: 12px 15px;
+    border-radius:10px;
   }
-
   thead tr {
     background-color: white;
     color: black;
-    text-align: left;
+    text-align: center;
   }
 
   tbody tr {
@@ -183,7 +185,7 @@ export const StyledTable = styled.table`
   }
   tbody tr {
     &:nth-of-type(odd) {
-      background-color: red!important;
+      background-color: ${({theme}) => theme.colors.secondary};
     }
   }
 `;

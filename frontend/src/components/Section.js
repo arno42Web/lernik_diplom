@@ -1,14 +1,18 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components';
-import { FlexContainer, Heading, PaddingContainer, ParaText, StyledTable, TechStackCard } from '../styled/Global.styled'
+import { FlexContainer, StyledTable} from '../styled/Global.styled'
 import { Theme } from '../utils/Theme';
-import { Button, Input, Space, Table } from 'antd';
+
 
 function Section({data}) {
     console.log("hello");
     console.log(data);
-    const headers = ["Name", "Date", "ipmort","export"];
-  return (
+    const headers = ["Name", "date","import","export"];
+    const total = ["Name","Total_Export","Total_Import"];
+    let res_imp = 0;
+    let res_exp = 0;
+     let name = "none";
+    return (
     <ThemeProvider theme={Theme}>
     <FlexContainer fullWithChild>
     <div>
@@ -19,6 +23,7 @@ function Section({data}) {
             <th key={header}>{header}</th>
           ))}
         </tr>
+
       </thead>
       <tbody>
         {data.map((item, index) => (
@@ -30,6 +35,28 @@ function Section({data}) {
           </tr>
         ))}
       </tbody>
+      </StyledTable>
+      <StyledTable>
+        <thead>
+        <tr>
+          {total.map((total) => (
+            <th key={total}>{total}</th>
+          ))}
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          {data.map((elem)=>{
+            res_imp +=parseInt(elem.import_value);
+            res_exp +=parseInt(elem.export_value);
+            name = elem.name
+          })}
+          <td>{name}</td>
+          <td>{res_imp}</td>
+          <td>{res_exp}</td>
+        </tr>
+
+        </tbody>
       </StyledTable>
     </div>
     </FlexContainer>

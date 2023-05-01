@@ -1,8 +1,10 @@
 .App {
   text-align: center;
   height: 100vh;
-  background-color: red;
- 
+  background: url(./image/image.jpeg);
+  background-size: contain;
+  background-repeat: inherit;
+  background-position: 0%;
 }
 
 .App-logo {
@@ -17,7 +19,6 @@
 }
 
 .App-header {
-  background-color: red;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

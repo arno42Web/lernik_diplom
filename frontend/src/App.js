@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={Theme}>
-        <MainBody>
+        <MainBody >
           <FormComponent/>
 
         </MainBody>
