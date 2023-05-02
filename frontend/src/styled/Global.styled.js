@@ -70,7 +70,7 @@ export const Button = styled.button`
 
 export const MainBody = styled.div`
 	/*background-color:${({theme})=> theme.colors.primary};  */
-	width: 100%; 
+	width: 100%;
 `
 export const Container = styled.div`
 
@@ -82,7 +82,6 @@ export const Container = styled.div`
 
 
 export const PaddingContainer = styled.div`
-
     padding-top: ${({ top })=> top};
     padding-bottom: ${({ bottom }) => bottom };
     padding-left: ${({ left }) => left };
@@ -164,6 +163,7 @@ export const TechStackCard = styled.div`
 export const StyledTable = styled.table`
   margin: 25px 0;
   font-size: 0.9em;
+  height:200px
   font-family: sans-serif;
   min-width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);

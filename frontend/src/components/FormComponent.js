@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Container, Form, Label, PaddingContainer} from "../styled/Global.styled";
 import CountrySelect from "./CountrySelect";
 import MonthSelect from "./MonthSelect";
@@ -10,6 +10,18 @@ import '../styled/form.css'
 
 
 const FormComponent = () => {
+  useEffect(() => {
+    function setBodyHeight() {
+      document.body.style.height = window.innerHeight + 'px';
+    }
+
+    setBodyHeight();
+    window.addEventListener('resize', setBodyHeight);
+
+    return () => {
+      window.removeEventListener('resize', setBodyHeight);
+    };
+  }, []);
   const [country, setCountry] = useState("");
   const [year, setYear] = useState("");
   const [month, setMonth] = useState("");
