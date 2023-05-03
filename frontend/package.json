@@ -14,9 +14,11 @@
     "styled-components": "^5.3.10",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://ababoomian.github.io/arno42Web/lernik_diplom/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "npm run build && cp -r build ../backend/build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

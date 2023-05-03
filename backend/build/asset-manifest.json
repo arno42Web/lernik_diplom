@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/arno42Web/lernik_diplom/static/css/main.90bc8906.css",
+    "main.js": "/arno42Web/lernik_diplom/static/js/main.a97436a1.js",
+    "static/media/image.jpeg": "/arno42Web/lernik_diplom/static/media/image.d39d322bfae18c25b06c.jpeg",
+    "index.html": "/arno42Web/lernik_diplom/index.html",
+    "main.90bc8906.css.map": "/arno42Web/lernik_diplom/static/css/main.90bc8906.css.map",
+    "main.a97436a1.js.map": "/arno42Web/lernik_diplom/static/js/main.a97436a1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90bc8906.css",
+    "static/js/main.a97436a1.js"
+  ]
+}
