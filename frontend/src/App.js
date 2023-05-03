@@ -6,6 +6,7 @@ import { Theme } from './utils/Theme';
 import Navbar from './components/Navbar';
 import { useEffect } from 'react';
 import Footer from './components/Footer';
+import Layout from 'antd/es/layout/layout';
 
 function App() {
   useEffect(() => {
@@ -19,16 +20,18 @@ function App() {
     return () => {
       window.removeEventListener('resize', setBodyHeight);
     };
+
   }, []);
   return (
     <div className="App">
       <ThemeProvider theme={Theme}>
-        <MainBody >
-          <Navbar/>
+         <MainBody >
+           {/* <Navbar/> */}
           <FormComponent/>
-          <Footer/>
-        </MainBody>
+          
+        </MainBody> 
       </ThemeProvider>
+          <Footer/> 
     </div>
   );
 }

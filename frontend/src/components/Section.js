@@ -1,10 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components';
 import { FlexContainer, StyledTable} from '../styled/Global.styled'
 import { Theme } from '../utils/Theme';
 
-
 function Section({data}) {
+  useEffect(() => {
+    function setBodyHeight() {
+      document.body.style.height = window.innerHeight + 'px';
+    }
+  
+    setBodyHeight();
+    window.addEventListener('resize', setBodyHeight);
+  
+    return () => {
+      window.removeEventListener('resize', setBodyHeight);
+    };
+  
+  }, []);
     console.log("hello");
     console.log(data);
     const headers = ["Name", "date","import","export"];

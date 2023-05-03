@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
     position:fixed;
-    top:5%;
-    left:10%;
+    top:2%;
+    left:1%;
     z-index:10;
     transition: all 0.3s ease-in;
     padding: 0px 10px;

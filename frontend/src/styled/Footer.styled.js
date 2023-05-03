@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  position: fixed;
-  z-index:-1;
+  margin-top:50%;
   bottom:0;
   width:100%;
   background-color: #343a40;
@@ -10,6 +9,10 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  @media only screen and (max-width: 600px) {
+    display:flex;
+    flex-direction:column;
+  }
 `;
 
 export const FooterLeft = styled.div`

@@ -34,7 +34,7 @@ const FormComponent = () => {
   }; */
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const endpoint = `http://localhost:5000/country/${country}/${year}/${month}`;
+    const endpoint = `http://10.12.17.6:5000/country/${country}/${year}/${month}`;
     const response = await fetch(endpoint,{method:"GET"});
 
     if (response.ok) {
