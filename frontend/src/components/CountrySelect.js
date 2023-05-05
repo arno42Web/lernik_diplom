@@ -1,13 +1,15 @@
 import { Select } from "../styled/Global.styled";
 
-const CountrySelect = ({ value, onChange }) => {
+const CountrySelect = ({ value, onChange ,arr}) => {
+  console.log("arr => ",arr.split(','));
+  let res = arr.split(',');
     return (
       <Select value={value} onChange={onChange}>
         <option value="">none</option>
-        <option value="Iran">Iran 🇮🇷</option>
-        <option value="China">China 🇨🇳</option>
-        <option value="Japan">Japan 🇯🇵</option>
-        <option value="Germany">Germany 🇩🇪</option>
+        <option value="Iran">{res[0]} 🇮🇷</option>
+        <option value="China">{res[1]} 🇨🇳</option>
+        <option value="Japan">{res[2]} 🇯🇵</option>
+        <option value="Germany">{res[3]} 🇩🇪</option>
       </Select>
     );
   };

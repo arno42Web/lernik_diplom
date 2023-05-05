@@ -5,6 +5,7 @@ import MonthSelect from "./MonthSelect";
 import Section from "./Section";
 import YearSelect from "./YearSelect";
 import '../styled/form.css'
+import LanguageSelect from "./LanguageSelect";
 
 
 
@@ -25,7 +26,8 @@ const FormComponent = () => {
   const [country, setCountry] = useState("");
   const [year, setYear] = useState("");
   const [month, setMonth] = useState("");
-  const [data_map, setData_map] = useState([])
+  const [data_map, setData_map] = useState([]);
+  const [language,setLanguage] = useState(["Iran","China","Japan","Germany"])
 
 /*   const handleSubmit = (event) => {
     event.preventDefault();
@@ -59,8 +61,12 @@ const FormComponent = () => {
       <div>
     <Form onSubmit={(e)=>handleSubmit(e)}>
       <Label>
+        Language:
+        <LanguageSelect value={language} onChange={(e) =>{ setLanguage(e.target.value)}}/>
+      </Label>
+      <Label>
         Country:
-        <CountrySelect value={country} onChange={(e) => setCountry(e.target.value)} />
+        <CountrySelect value={country} onChange={(e) => setCountry(e.target.value)} arr={language} />
       </Label>
       <Label>
         Year:
