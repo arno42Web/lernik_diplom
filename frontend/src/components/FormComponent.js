@@ -27,7 +27,7 @@ const FormComponent = () => {
   const [year, setYear] = useState("");
   const [month, setMonth] = useState("");
   const [data_map, setData_map] = useState([]);
-  const [language,setLanguage] = useState(["Iran","China","Japan","Germany"])
+  const [language,setLanguage] = useState(["Iran","China","Japan","Germany"].join(","));
 
 /*   const handleSubmit = (event) => {
     event.preventDefault();
@@ -36,7 +36,7 @@ const FormComponent = () => {
   }; */
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const endpoint = `http://10.12.17.6:5000/country/${country}/${year}/${month}`;
+    const endpoint = `http://localhost:5000/country/${country}/${year}/${month}`;
     const response = await fetch(endpoint,{method:"GET"});
 
     if (response.ok) {

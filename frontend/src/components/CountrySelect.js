@@ -2,7 +2,9 @@ import { Select } from "../styled/Global.styled";
 
 const CountrySelect = ({ value, onChange ,arr}) => {
   console.log("arr => ",arr.split(','));
-  let res = arr.split(',');
+  String.toString(arr).split(',');
+  let res =arr.split(',');
+   //res = new arr.split(',');
     return (
       <Select value={value} onChange={onChange}>
         <option value="">none</option>

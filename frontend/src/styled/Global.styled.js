@@ -1,6 +1,4 @@
 import styled from "styled-components";
-// import theme from "../utils/Theme"
-// import {Theme} from "../utils/Theme";
 
 export const Form = styled.form`
   display: flex;
